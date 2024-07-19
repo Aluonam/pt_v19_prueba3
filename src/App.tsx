@@ -1,6 +1,7 @@
 
 import './App.css'
 import ActualDate from './components/ActualDate'
+import ChangeBackground from './components/ChangeBackground'
 
 function App() {
 
@@ -8,6 +9,8 @@ function App() {
     <>
       <div>
       <ActualDate></ActualDate>
+      <br></br>
+      <ChangeBackground></ChangeBackground>
       </div>
       </>
   )
