@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import ModalUsers from "./ModalUsers";
 
-interface dataPropstype {
+interface dataProptype {
     avatar : string,
     email: string,
     first_name: string,
@@ -10,7 +11,7 @@ interface dataPropstype {
 
 const DataModal = () => {
 
-    const [data, setData] = useState<dataPropstype>();
+    const [data, setData] = useState<dataProptype>();
 
     useEffect(() => {
         callData()
@@ -24,9 +25,8 @@ const DataModal = () => {
         setData(dataCall.data)
     }
 
-
   return (
-    <div>DataModal</div>
+    <ModalUsers></ModalUsers>
   )
 }
 
