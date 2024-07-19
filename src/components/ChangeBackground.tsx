@@ -1,7 +1,9 @@
 
 const ChangeBackground = () => {
   return (
-    <div>ChangeBackground</div>
+    <div>
+        <input type="color" onChange={(e)=>{console.log(e.target.value)}}></input>
+    </div>
   )
 }
 
