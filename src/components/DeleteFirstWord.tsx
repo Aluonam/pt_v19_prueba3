@@ -1,7 +1,10 @@
 
 const DeleteFirstWord = () => {
   return (
-    <div>DeleteFirstWord</div>
+    <div>
+        <input placeholder="Escribe tu frase" onChange={(e)=>{}}></input>
+        <button onClick={()=>{}}>Elimina primera palabra</button>
+    </div>
   )
 }
 
