@@ -2,6 +2,7 @@
 import './App.css'
 import ActualDate from './components/ActualDate'
 import ChangeBackground from './components/ChangeBackground'
+import DataModal from './components/DataModal'
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
       <ActualDate></ActualDate>
       <br></br>
       <ChangeBackground></ChangeBackground>
+      <br></br>
+      <DataModal></DataModal>
       </div>
       </>
   )
