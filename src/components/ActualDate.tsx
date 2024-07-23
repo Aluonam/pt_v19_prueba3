@@ -24,7 +24,7 @@ const ActualDate = () => {
     
   return (
     <div>
-        Hoy es: {date?.day}
+        Hoy es: {date? date.day: "loading..."}
         <br></br>
         La hora es: {date?.hour}
         

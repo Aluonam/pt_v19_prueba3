@@ -1,12 +1,14 @@
-import { useState } from "react"
 
-const ChangeBackground = () => {
 
-    const [colorSelected, setColorSelected] = useState<string>()
+type ChangeBackgroundPropsTypes = {
+  changeColor: (data:string) => void
+}
+
+const ChangeBackground = ({changeColor}:ChangeBackgroundPropsTypes) => {
+
   return (
     <div>
-        <input type="color" onChange={(e)=>{setColorSelected(e.target.value)}}></input>
-        {colorSelected}
+        <input type="color" onChange={(e)=>{changeColor(e.target.value)}}></input>
     </div>
   )
 }
