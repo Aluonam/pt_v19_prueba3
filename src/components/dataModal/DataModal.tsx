@@ -11,7 +11,7 @@ interface dataProptype {
 
 const DataModal = () => {
 
-    const [data, setData] = useState<dataProptype>();
+    const [data, setData] = useState<dataProptype[]>([]);
 
     useEffect(() => {
         callData()
@@ -21,12 +21,13 @@ const DataModal = () => {
     const callData = async ()=>{
         const call = await fetch(`https://reqres.in/api/users?page=2`);
         const dataCall = await call.json();
-        console.log(dataCall.data)
         setData(dataCall.data)
     }
 
   return (
-    <ModalUsers></ModalUsers>
+    <div>
+     <ModalUsers data={data} />
+    </div>
   )
 }
 
